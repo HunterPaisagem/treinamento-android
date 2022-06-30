@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.feature.products.ProductsActivity">
+
+    <br.com.cwi.nespresso_app.presentation.component.ProductComponent
+        android:id="@+id/content_coffees"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="26dp"
+        app:component_product_title="@string/txt_coffees"
+        app:component_product_subtitle="@string/txt_coffee_subtitle"
+        app:component_product_background_color="@color/coffees_color"
+        app:component_product_image="@drawable/coffees"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/content_machines" />
+
+    <br.com.cwi.nespresso_app.presentation.component.ProductComponent
+        android:id="@+id/content_machines"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="26dp"
+        app:component_product_title="@string/txt_machines"
+        app:component_product_subtitle="@string/txt_machines_subtitle"
+        app:component_product_background_color="@color/machines_color"
+        app:component_product_image="@drawable/machines"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content_coffees"
+        app:layout_constraintBottom_toTopOf="@+id/content_accessories" />
+
+    <br.com.cwi.nespresso_app.presentation.component.ProductComponent
+        android:id="@+id/content_accessories"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="26dp"
+        app:component_product_title="@string/txt_accessories"
+        app:component_product_subtitle="@string/txt_accessories_subtitle"
+        app:component_product_background_color="@color/accessories_color"
+        app:component_product_image="@drawable/accessories"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_machines"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu_bottom_nav"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

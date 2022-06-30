@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProductComponent">
+        <attr name="component_product_title" format="reference" />
+        <attr name="component_product_subtitle" format="reference" />
+        <attr name="component_product_image" format="reference" />
+        <attr name="component_product_background_color" format="color" />
+    </declare-styleable>
+</resources>

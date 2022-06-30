@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        tools:text="Café com robusta de monções" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_origin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/origin"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_origin_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        tools:text="Mix de grãos Arábica e Robusta Indianos."
+        android:textColor="@color/gray_medium"
+        android:textSize="14sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_roasting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roasting"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_roasting_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        tools:text="Por meio da torra separada de grãos conseguimos manter as distintas características de grãos Arábica e Robusta."
+        android:textColor="@color/gray_medium"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_aroma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aromatic_perfil"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_coffee_aroma_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        tools:text="Os grãos de café Robusta Monsoon passam meses expostos aos ventos das Monções. Esse blend é um café complexo, encorpado e aromático, com notas amadeiradas e de especiarias."
+        android:textColor="@color/gray_medium"
+        android:textSize="14sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
